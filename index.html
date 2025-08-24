@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="textFont">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero_view" id="hero">
+        <div class="hero_content textFont">
+            <h1>Welcome to My Portfolio</h1>
+            <h2>Scroll down to explore</h2>
+            <button class="scroll_down_btn" aria-label="Scroll Down">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M16 8V24M16 24L8 16M16 24L24 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <main>
+        <!-- Project area -->
+        <section class="pf_block" id="projects">
+            <!-- Text area -->
+            <section>
+                <div class="pf_text_head textFont">
+                    <h1>Projects</h1>
+                </div>
+                <div class="pf_text" id="pfText">
+                    <div class="pf_text_item">Project 1 description</div>
+                    <div class="pf_text_item">Project 2 description</div>
+                    <div class="pf_text_item">Project 3 description</div>
+                </div>
+            </section>
+
+            <!-- Preview area -->
+            <section>
+                <div class="pf_preview" id="pfPreview">
+                    <button class="arrow left" id="arrowLeft">&#8592;</button>
+                    <img id="previewImg" src="assets/img/project1.jpg" alt="Project 1" style="max-height:100%; max-width:80%; border-radius:32px;"/>
+                    <button class="arrow right" id="arrowRight">&#8594;</button>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Contact information -->
+    <footer>
+        <section class="contact_block" id="contact">
+            <div class="contact_text_head textFont">
+                <h1>Contact</h1>
+            </div>
+            <div class="contact_content">
+                <!-- Left: Social links -->
+                <div class="contact_links">
+                    <a href="https://www.instagram.com/sean_gs" target="_blank" aria-label="Instagram">
+                        <img src="assets/img/icons/instagram.svg" alt="Instagram" class="contact_icon"/>
+                        <span class="contact_link_text">sean_gs</span>
+                    </a>
+                    <a href="https://github.com/S34nGS" target="_blank" aria-label="GitHub">
+                        <img src="assets/img/icons/github.svg" alt="GitHub" class="contact_icon"/>
+                        <span class="contact_link_text">S34nGS</span>
+                    </a>
+                    <a href="mailto:steenhuis20@gmail.com.com" aria-label="Email">
+                        <img src="assets/img/icons/email.svg" alt="Email" class="contact_icon"/>
+                        <span class="contact_link_text">steenhuis20@gmail.com</span>
+                    </a>
+                </div>
+                <!-- Vertical divider -->
+                <div class="vertical-divider"></div>
+                <!-- Right: Email form -->
+                <form class="contact_form" action="mailto:your@email.com" method="POST" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+        <p class="footLine textFont">Sean Steenhuis</p>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="scrollTopBtn" aria-label="Scroll to top">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M16 24V8M16 8L8 16M16 8L24 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="assets/js/scrollTopBtn.js"></script>
+    <script src="assets/js/pfPreview.js"></script>
+    <script src="assets/js/heroTransition.js"></script>
+    <script src="assets/js/slowScroll.js"></script>
+    <script src="assets/js/scrollToTopOnRefresh.js"></script>
+
+</body>
+</html>
