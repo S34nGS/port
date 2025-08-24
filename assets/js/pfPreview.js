@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             name: 'Skate Game',
-            images: ['assets/img/projectImages/project2.jpg', 'assets/img/projectImages/project2b.jpg']
+            images: [
+				'assets/img/projectImages/Skate/homepage.png', 
+				'assets/img/projectImages/Skate/game.png'
+			]
         },
         {
             name: 'Project 3',
